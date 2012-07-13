@@ -10,7 +10,7 @@ class Dakbill(models.Model):
 	def __unicode__(self):
 		return self.name
 class Comment(models.Model):
-    body = models.TextField()
+    body = models.CharField()
     author = models.CharField(max_length=60)
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
@@ -20,7 +20,7 @@ class DakbillAdmin(admin.ModelAdmin):
     search=('title','body')
     list_filter=('title','created')
 class CommentAdmin(admin.ModelAdmin):
-    list_display=('post','author','body','created','updated')
+    list_display=('dakbill','author','body','created','updated')
     list_filter=('author','created')
 admin.site.register(Dakbill,DakbillAdmin)
 admin.site.register(Comment,CommentAdmin)

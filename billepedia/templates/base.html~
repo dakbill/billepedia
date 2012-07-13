@@ -12,8 +12,8 @@ Released   : 20120611
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<meta name="keywords" content="The bill life" />
+<meta name="description" content="billepedia" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>billepedia</title>
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
@@ -49,6 +49,12 @@ Released   : 20120611
 			<db>{{dakbill.body}}</db>
 			</a>
 			<p ><a href="#" class="link-style2">Expand</a></p>
+			<div>
+			<form method='post' action="">
+			{{form.as_p}}
+			<input type='submit' name='Submit' value='comment' id='button'>
+			</form>
+			</div>	
 		</div>
 		<div id="col2"><img src="/static/images/pics02.jpg" alt="" width="260" height="240" class="image-style" />
 			<div class="text-style">My only opponent</div>

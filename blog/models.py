@@ -10,7 +10,7 @@ class Dakbill(models.Model):
 	def __unicode__(self):
 		return self.name
 class Comment(models.Model):
-    body = models.TextField()
+    body = models.CharField(max_length=60)
     author = models.CharField(max_length=60)
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
